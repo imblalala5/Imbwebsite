@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Kamera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mika Rental Kamera DSLR</h1>
+    </header>
+    <main>
+        <section class="deskripsi-toko">
+            <div class="deskripsi-toko">
+                <h2>Deskripsi Toko</h2>
+                <p>Sewa Kamera DSLR Termurah di Jogja</p>
+                <p>Kami menyediakan berbagai kamera fotografi dan videografi di Daerah Istimewa Yogyakarta dengan harga murah dan
+                    persyaratan mudah. Ayo pesan kamera yang kamu butuhkan dan dapatkan diskonnya.</p>
+                <p>Beragam Kamera DSLR merek terkenal di dunia seperti Canon dan Nikon bisa anda sewa dengan murah untuk menyesuaikan kebutuhan fotografi maupun videografi anda.</p>
+            </div>
+        <section class="camera-list">
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Nikon D5200')">
+                <img src="nikon.jpeg" alt="Nikon D5200">
+                <h2>Nikon D5200</h2>
+                <p>65k / 12 jam</p>
+                <p>125k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Nikon%20D5200" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 700D')">
+                <img src="canon700d.jpeg" alt="Canon EOS 700D">
+                <h2>Canon EOS 700D</h2>
+                <p>70k / 12 jam</p>
+                <p>130k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%20700D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 1300D')">
+                <img src="canon1300d.jpeg" alt="Canon EOS 1300D">
+                <h2>Canon EOS 1300D</h2>
+                <p>55k / 12 jam</p>
+                <p>100k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%201300D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 1200D')">
+                <img src="canon1200d.jpeg" alt="Canon EOS 1200D">
+                <h2>Canon EOS 1200D</h2>
+                <p>50k / 12 jam</p>
+                <p>90k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%201200D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 600D')">
+                <img src="canon600d.jpeg" alt="Canon EOS 600D">
+                <h2>Canon EOS 600D</h2>
+                <p>60k / 12 jam</p>
+                <p>110k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%20600D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Nikon D600')">
+                <img src="nikon600d.jpeg" alt="Nikon D600">
+                <h2>Nikon D600</h2>
+                <p>125k / 12 jam</p>
+                <p>245k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Nikon%20D600" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 650D')">
+                <img src="canon650d.jpeg" alt="Canon EOS 650D">
+                <h2>Canon EOS 650D</h2>
+                <p>55k / 12 jam</p>
+                <p>100k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%20650D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 60D')">
+                <img src="canon60d.jpeg" alt="Canon EOS 60D">
+                <h2>Canon EOS 60D</h2>
+                <p>70k / 12 jam</p>
+                <p>135k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%2060D" class="order-button">Pesan Sekarang</a>
+            </div>
+            <div class="camera-item" onclick="tampilkanSpesifikasi('Canon EOS 6D')">
+                <img src="canon6d.jpeg" alt="Canon EOS 6D">
+                <h2>Canon EOS 6D</h2>
+                <p>145k / 12 jam</p>
+                <p>275k / 24 jam</p>
+                <a href="https://wa.me/6285226369681?text=Saya%20ingin%20memesan%20Canon%20EOS%206D" class="order-button">Pesan Sekarang</a>
+            </div>
+        </section>
+        <section class="order-form">
+            <h2>Pesan Kamera</h2>
+            <form action="order.php" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="camera">Kamera:</label>
+                <select id="camera" name="camera" required>
+                    <option value="Nikon D5200">Nikon D5200</option>
+                    <option value="Canon EOS 700D">Canon EOS 700D</option>
+                    <option value="Canon EOS 1300D">Canon EOS 1300D</option>
+                    <option value="Canon EOS 1200D">Canon EOS 1200D</option>
+                    <option value="Canon EOS 600D">Canon EOS 600D</option>
+                    <option value="Nikon D600">Nikon D600</option>
+                    <option value="Canon EOS 650D">Canon EOS 650D</option>
+                    <option value="Canon EOS 60D">Canon EOS 60D</option>
+                    <option value="Canon EOS 6D">Canon EOS 6D</option>
+                </select>
+                <label for="duration">Durasi (jam):</label>
+                <input type="number" id="duration" name="duration" required>
+                <button type="submit">Pesan</button>
+            </form>
+        </section>
+        <section id="spesifikasi-kamera">
+            <h2>Spesifikasi Kamera</h2>
+            <p id="konten-spesifikasi">Klik gambar kamera untuk melihat spesifikasi.</p>
+        </section>
+    </main>
+    <footer>
+        <section class="contact-info">
+            <div class="contact">
+                <h3>Hubungi Kami</h3>
+                <p>Kami buka setiap hari dari pukul 07.00 - 21.00 WIB.</p>
+                <p>WhatsApp: +6285226369681</p>
+                <p>Instagram: @imb_</p>
+            </div>
+            <div class="address">
+                <h3>Alamat</h3>
+                <p>Gg. Pandu No.6 (Sorosutan, Kec.Umbulharjo, DIY)</p>
+                <p><a href="https://www.google.com/maps">Lihat alamat di Google Maps</a></p>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
